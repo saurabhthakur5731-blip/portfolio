@@ -209,7 +209,52 @@ width:0;
 background:#f4b400;
 transition:1s;
 }
+#projects{
+padding:80px 20px;
+text-align:center;
+}
 
+.projects-container{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+max-width:1200px;
+margin:auto;
+}
+
+.project-card{
+background:black;
+padding:20px;
+border-radius:10px;
+transition:0.3s;
+}
+.project-card h3{
+    color: orange;
+    font-size: 15px;
+}
+.project-card p{
+    color: white;
+    font-size: 12px;
+}
+.project-card img{
+width:100%;
+border-radius:8px;
+}
+
+.project-card:hover{
+transform:translateY(-8px);
+box-shadow:0px 0px 15px orange;
+}
+
+.project-btn{
+display:inline-block;
+margin-top:12px;
+padding:8px 16px;
+background:orange;
+color:white;
+text-decoration:none;
+border-radius:5px;
+}
 /* CONTACT */
 
 .contact-section{
@@ -255,8 +300,12 @@ margin:20px;
 .menu.active{
 right:0;
 }
+.projects-container{
+grid-template-columns:1fr;
+}
 
 }
+
 
 
 </style>
@@ -305,7 +354,7 @@ right:0;
 
 <div class="hero-image">
 
-<img src="./my_photo.jpeg" alt="Saurabh">
+<img src="images/my_photo.jpeg" alt="Saurabh">
 
 </div>
 
@@ -380,14 +429,57 @@ building responsive websites that work perfectly on all devices.
 
 <!-- PROJECTS -->
 
-<section class="projects" id="projects">
+<section id="projects">
 
 <h2 class="section-title">My Projects</h2>
 
-<p>Coming Soon - My Portfolio Projects</p>
+<div class="projects-container">
+
+<!-- Project 1 -->
+
+<div class="project-card">
+
+<img src="images/portfolio.png" alt="Portfolio">
+
+<h3>Portfolio Website</h3>
+
+<p>My personal portfolio showcasing my skills, projects and contact information.</p>
+
+<a href="https://saurabhthakur5731-blip.github.io/portfolio/#" target="_blank" class="project-btn">Live Demo</a>
+
+</div>
+
+<!-- Project 2 -->
+
+<div class="project-card">
+
+<img src="images/movies-finder.png" alt="Movie Finder">
+
+<h3>Movie Finder Website</h3>
+
+<p>Search movies and view ratings using OMDB API.</p>
+
+<a href="https://saurabhthakur5731-blip.github.io/movies/" target="_blank" class="project-btn">Live Demo</a>
+
+</div>
+
+<!-- Project 3 -->
+
+<div class="project-card">
+
+<img src="images/recipes.png" alt="Recipes Website">
+
+<h3>Recipes Website</h3>
+
+<p>Explore different recipes with ingredients and cooking instructions.</p>
+
+<a href="https://saurabhthakur5731-blip.github.io/recpie/" target="_blank" class="project-btn">Live Demo</a>
+
+</div>
+
+</div>
 
 </section>
-
 
 <!-- CONTACT -->
 
